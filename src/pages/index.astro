@@ -596,7 +596,7 @@ const featuredPosts = [
 
       .foot-grid {
         display: grid;
-        grid-template-columns: 1.2fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 30px;
       }
 
@@ -703,18 +703,32 @@ const featuredPosts = [
               <span>چیزهای آشنا، از زاویه‌ای ناآشنا</span>
             </span>
           </a>
-          <nav aria-label="شبکه‌های اجتماعی">
-            <ul style="list-style: none; display: flex; gap: 10px; margin: 0; padding: 0; flex-wrap: wrap;">
+          <nav aria-label="شبکه‌های اجتماعی و ارتباط با ما">
+            <ul
+              style="list-style: none; display: grid; grid-template-columns: repeat(2, auto); gap: 10px; margin: 0; padding: 0;"
+            >
               <li>
                 <a
-                  href="https://www.instagram.com/bazfekr_channel"
+                  href="https://t.me/bazfekr_support"
                   target="_blank"
                   rel="noopener"
-                  style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; background: var(--card); border: 1.5px solid var(--ink); border-radius: 12px; box-shadow: 2px 2px 0 var(--ink); font-weight: 800; color: var(--ink); text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; font-size: 0.88rem;"
+                  style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; background: var(--card); border: 1.5px solid var(--ink); border-radius: 12px; box-shadow: 2px 2px 0 var(--ink); font-weight: 800; color: var(--ink); text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease; font-size: 0.88rem;"
                   onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='4px 4px 0 var(--ink)'; this.style.background='var(--accent-soft)';"
                   onmouseout="this.style.transform=''; this.style.boxShadow='2px 2px 0 var(--ink)'; this.style.background='var(--card)';"
                 >
-                  📷 اینستاگرام
+                  💬 پشتیبانی تلگرام
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://t.me/bazfekr_channel"
+                  target="_blank"
+                  rel="noopener"
+                  style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; background: var(--card); border: 1.5px solid var(--ink); border-radius: 12px; box-shadow: 2px 2px 0 var(--ink); font-weight: 800; color: var(--ink); text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease; font-size: 0.88rem;"
+                  onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='4px 4px 0 var(--ink)'; this.style.background='var(--accent-soft)';"
+                  onmouseout="this.style.transform=''; this.style.boxShadow='2px 2px 0 var(--ink)'; this.style.background='var(--card)';"
+                >
+                  ✈️ کانال تلگرام
                 </a>
               </li>
               <li>
@@ -722,11 +736,23 @@ const featuredPosts = [
                   href="https://www.youtube.com/@bazfekr_channel"
                   target="_blank"
                   rel="noopener"
-                  style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; background: var(--ink); border: 1.5px solid var(--ink); border-radius: 12px; box-shadow: 2px 2px 0 var(--ink); font-weight: 800; color: var(--paper); text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; font-size: 0.88rem;"
-                  onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='4px 4px 0 var(--ink)'; this.style.background='var(--accent-deep)'; this.style.borderColor='var(--accent-deep)';"
-                  onmouseout="this.style.transform=''; this.style.boxShadow='2px 2px 0 var(--ink)'; this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';"
+                  style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; background: var(--card); border: 1.5px solid var(--ink); border-radius: 12px; box-shadow: 2px 2px 0 var(--ink); font-weight: 800; color: var(--ink); text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease; font-size: 0.88rem;"
+                  onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='4px 4px 0 var(--ink)'; this.style.background='var(--accent-soft)';"
+                  onmouseout="this.style.transform=''; this.style.boxShadow='2px 2px 0 var(--ink)'; this.style.background='var(--card)';"
                 >
                   🎥 یوتیوب
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/bazfekr_channel"
+                  target="_blank"
+                  rel="noopener"
+                  style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; background: var(--card); border: 1.5px solid var(--ink); border-radius: 12px; box-shadow: 2px 2px 0 var(--ink); font-weight: 800; color: var(--ink); text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease; font-size: 0.88rem;"
+                  onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='4px 4px 0 var(--ink)'; this.style.background='var(--accent-soft)';"
+                  onmouseout="this.style.transform=''; this.style.boxShadow='2px 2px 0 var(--ink)'; this.style.background='var(--card)';"
+                >
+                  📷 اینستاگرام
                 </a>
               </li>
             </ul>
@@ -856,30 +882,6 @@ const featuredPosts = [
               🎥 یوتیوب
             </a>
           </div>
-        </div>
-
-        <div class="foot">
-          <h4>پیمایش</h4>
-          <ul>
-            <li><a href="#categories">دسته‌بندی‌ها</a></li>
-            <li><a href="#posts">آخرین مطالب</a></li>
-          </ul>
-        </div>
-
-        <div class="foot">
-          <h4>درباره</h4>
-          <ul>
-            <li><a href="#contact">ارتباط با ما</a></li>
-            <li>
-              <a
-                href="https://www.youtube.com/@bazfekr_channel"
-                target="_blank"
-                rel="noopener"
-              >
-                کانال یوتیوب بازفکر
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
 
