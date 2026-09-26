@@ -894,16 +894,10 @@ const featuredPosts = [
       <!-- Featured Posts -->
       <section id="posts">
         <div class="container">
-          <div class="section-head">
-            <div>
-              <div class="section-kicker">/// پیش‌خوانِ هفته</div>
-              <h2>چند پیشنهاد برای شروع</h2>
-            </div>
-            <p>
-              این‌ها متنی هستند که در صف انتشار هستند؛ بزودی نسخه‌ی کاملشان را
-              در همین صفحه و در کانال تلگرام بازفکر منتشر می‌کنیم.
-            </p>
-          </div>
+          <p style="margin: 0 0 28px; color: var(--muted); max-width: 70ch;">
+            این‌ها متنی هستند که در صف انتشار هستند؛ بزودی نسخه‌ی کاملشان را
+            در همین صفحه و در کانال تلگرام بازفکر منتشر می‌کنیم.
+          </p>
 
           <div class="posts">
             {featuredPosts.map((p) => (
@@ -956,7 +950,13 @@ const featuredPosts = [
             >
               📷 اینستاگرام
             </a>
-            <a href="mailto:hello@bazfekr.ir">📧 ایمیل</a>
+            <a
+              href="https://www.youtube.com/@bazfekr_channel"
+              target="_blank"
+              rel="noopener"
+            >
+              🎥 یوتیوب
+            </a>
           </div>
         </div>
 
@@ -973,9 +973,15 @@ const featuredPosts = [
           <h4>درباره</h4>
           <ul>
             <li><a href="#contact">ارتباط با ما</a></li>
-            <li><a href="https://t.me/bazfekr_support" target="_blank" rel="noopener">ارسال پیشنهاد و انتقاد</a></li>
-            <li><a href="#categories">همکاری در نوشتن</a></li>
-            <li><a href="mailto:hello@bazfekr.ir">hello@bazfekr.ir</a></li>
+            <li>
+              <a
+                href="https://www.youtube.com/@bazfekr_channel"
+                target="_blank"
+                rel="noopener"
+              >
+                کانال یوتیوب بازفکر
+              </a>
+            </li>
           </ul>
         </div>
       </div>
