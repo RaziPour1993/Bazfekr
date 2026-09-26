@@ -667,108 +667,6 @@ const featuredPosts = [
         transform: scaleX(-1) translateX(4px);
       }
 
-      /* ===== Newsletter ===== */
-      .news {
-        background:
-          linear-gradient(180deg, var(--ink), #1f1e19);
-        border: 1.5px solid var(--ink);
-        border-radius: 26px;
-        padding: 40px;
-        color: var(--paper);
-        position: relative;
-        overflow: hidden;
-        box-shadow: 8px 8px 0 var(--accent-deep);
-      }
-
-      .news::before {
-        content: "";
-        position: absolute;
-        inset: -30% -10% auto auto;
-        width: 380px;
-        height: 380px;
-        background: radial-gradient(circle, #f4b40033, transparent 70%);
-        pointer-events: none;
-      }
-
-      .news-grid {
-        display: grid;
-        grid-template-columns: 1.05fr 0.95fr;
-        gap: 30px;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-      }
-
-      @media (max-width: 820px) {
-        .news {
-          padding: 28px;
-        }
-        .news-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      .news h2 {
-        color: var(--paper);
-        margin-top: 4px;
-      }
-
-      .news p {
-        color: #cbbf9a;
-        margin: 14px 0 0;
-      }
-
-      .news-form {
-        background: #0d0d0c;
-        border: 1.5px solid #3a372d;
-        border-radius: 18px;
-        padding: 10px;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-
-      .news-form input {
-        flex: 1;
-        min-width: 220px;
-        background: transparent;
-        border: none;
-        outline: none;
-        color: var(--paper);
-        font-family: inherit;
-        font-size: 1rem;
-        padding: 12px 14px;
-      }
-
-      .news-form input::placeholder {
-        color: #8d846d;
-      }
-
-      .news-form button {
-        background: var(--accent);
-        color: var(--ink);
-        border: 1.5px solid var(--accent);
-        padding: 12px 18px;
-        border-radius: 14px;
-        font-family: inherit;
-        font-weight: 900;
-        cursor: pointer;
-        font-size: 0.95rem;
-        transition: background 0.15s ease, transform 0.15s ease;
-      }
-
-      .news-form button:hover {
-        background: #ffcc33;
-        transform: translateY(-1px);
-      }
-
-      .news-note {
-        display: block;
-        margin-top: 12px;
-        font-size: 0.82rem;
-        color: #a89a71;
-      }
-
       /* ===== Footer ===== */
       footer {
         border-top: 1px dashed rgba(34, 33, 28, 0.25);
@@ -891,7 +789,6 @@ const featuredPosts = [
             <ul>
               <li><a href="#categories">دسته‌ها</a></li>
               <li><a href="#posts">مطالب</a></li>
-              <li><a href="#news">خبرنامه</a></li>
               <li><a href="#contact">تماس</a></li>
               <li>
                 <a class="cta" href="https://t.me/bazfekr_channel" target="_blank" rel="noopener">
@@ -927,9 +824,14 @@ const featuredPosts = [
                   از اولین مطلب شروع کنید
                   <span aria-hidden="true">←</span>
                 </a>
-                <a class="btn btn-ghost" href="#news">
-                  عضو خبرنامه شوید
-                  <span aria-hidden="true">✉️</span>
+                <a
+                  class="btn btn-ghost"
+                  href="https://t.me/bazfekr_channel"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  عضویت در کانال تلگرام
+                  <span aria-hidden="true">✈️</span>
                 </a>
               </div>
 
@@ -1021,42 +923,6 @@ const featuredPosts = [
         </div>
       </section>
 
-      <!-- Newsletter -->
-      <section id="news">
-        <div class="container">
-          <div class="news">
-            <div class="news-grid">
-              <div>
-                <div class="section-kicker" style="color: var(--accent)">
-                  /// خبرنامۀ هفتگی بازفکر
-                </div>
-                <h2>هر هفته، یک نگاه تازه به چیزهای آشنا.</h2>
-                <p>
-                  عضو خبرنامه شوید تا مطلب تازه‌ی هفته را صبح روز جمعه، همراه با
-                  یک نقل قول کوتاه و یک ایده برای فکر کردن، مستقیماً در ایمیل
-                  خود دریافت کنید. تبلیغ نداریم، مزاحم نمی‌شویم.
-                </p>
-              </div>
-
-              <div>
-                <form class="news-form" onsubmit="event.preventDefault();">
-                  <input
-                    type="email"
-                    placeholder="ایمیل شما را اینجا بنویسید…"
-                    aria-label="ایمیل برای عضویت در خبرنامه"
-                    required
-                  />
-                  <button type="submit">عضویت</button>
-                </form>
-                <span class="news-note">
-                  💡 اگر ایمیل دوست ندارید، در کانال تلگرام @bazfekr_channel هم
-                  همین مطالب را منتشر می‌کنیم.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <!-- Footer -->
@@ -1099,7 +965,6 @@ const featuredPosts = [
           <ul>
             <li><a href="#categories">دسته‌بندی‌ها</a></li>
             <li><a href="#posts">آخرین مطالب</a></li>
-            <li><a href="#news">خبرنامه</a></li>
             <li><a href="https://bazfekr.ir">وب‌سایت رسمی</a></li>
           </ul>
         </div>
