@@ -310,50 +310,6 @@ const featuredPosts = [
         margin: 0 0 28px;
       }
 
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        text-decoration: none;
-        font-weight: 800;
-        padding: 12px 20px;
-        border-radius: 14px;
-        font-size: 0.98rem;
-        transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        border: 1.5px solid var(--ink);
-      }
-
-      .btn-primary {
-        background: var(--ink);
-        color: var(--paper);
-        box-shadow: 3px 3px 0 var(--ink);
-      }
-
-      .btn-primary:hover {
-        transform: translate(-2px, -2px);
-        box-shadow: 5px 5px 0 var(--ink);
-        background: var(--accent-deep);
-        border-color: var(--accent-deep);
-      }
-
-      .btn-ghost {
-        background: var(--card);
-        color: var(--ink);
-        box-shadow: 3px 3px 0 var(--ink);
-      }
-
-      .btn-ghost:hover {
-        transform: translate(-2px, -2px);
-        box-shadow: 5px 5px 0 var(--ink);
-        background: var(--accent-soft);
-      }
-
       .hero-art {
         position: relative;
         display: flex;
@@ -417,15 +373,6 @@ const featuredPosts = [
         top: 18%;
       }
 
-      .hero-art .sticker.s2 {
-        transform: rotate(3deg);
-        left: auto;
-        right: -8%;
-        top: auto;
-        bottom: 14%;
-        background: var(--accent-soft);
-      }
-
       @keyframes floatY {
         0%,
         100% {
@@ -434,35 +381,6 @@ const featuredPosts = [
         50% {
           transform: translateY(-10px);
         }
-      }
-
-      .stats {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        margin-top: 40px;
-        max-width: 540px;
-      }
-
-      .stat {
-        background: var(--card);
-        border: 1.5px solid var(--ink);
-        border-radius: 14px;
-        padding: 14px 16px;
-        box-shadow: 3px 3px 0 var(--ink);
-      }
-
-      .stat strong {
-        display: block;
-        font-size: 1.4rem;
-        font-weight: 900;
-        line-height: 1.1;
-      }
-
-      .stat span {
-        font-size: 0.82rem;
-        color: var(--muted);
-        font-weight: 600;
       }
 
       /* ===== Section shell ===== */
@@ -785,8 +703,33 @@ const featuredPosts = [
               <span>چیزهای آشنا، از زاویه‌ای ناآشنا</span>
             </span>
           </a>
-          <nav aria-label="منوی اصلی">
-            <ul></ul>
+          <nav aria-label="شبکه‌های اجتماعی">
+            <ul style="list-style: none; display: flex; gap: 10px; margin: 0; padding: 0; flex-wrap: wrap;">
+              <li>
+                <a
+                  href="https://www.instagram.com/bazfekr_channel"
+                  target="_blank"
+                  rel="noopener"
+                  style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; background: var(--card); border: 1.5px solid var(--ink); border-radius: 12px; box-shadow: 2px 2px 0 var(--ink); font-weight: 800; color: var(--ink); text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; font-size: 0.88rem;"
+                  onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='4px 4px 0 var(--ink)'; this.style.background='var(--accent-soft)';"
+                  onmouseout="this.style.transform=''; this.style.boxShadow='2px 2px 0 var(--ink)'; this.style.background='var(--card)';"
+                >
+                  📷 اینستاگرام
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@bazfekr_channel"
+                  target="_blank"
+                  rel="noopener"
+                  style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; background: var(--ink); border: 1.5px solid var(--ink); border-radius: 12px; box-shadow: 2px 2px 0 var(--ink); font-weight: 800; color: var(--paper); text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease; font-size: 0.88rem;"
+                  onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='4px 4px 0 var(--ink)'; this.style.background='var(--accent-deep)'; this.style.borderColor='var(--accent-deep)';"
+                  onmouseout="this.style.transform=''; this.style.boxShadow='2px 2px 0 var(--ink)'; this.style.background='var(--ink)'; this.style.borderColor='var(--ink)';"
+                >
+                  🎥 یوتیوب
+                </a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
@@ -810,36 +753,6 @@ const featuredPosts = [
                 در بازفکر، عاطفه، حقیقت و حس خوب حرف زدن را کنار هم می‌گذاریم؛
                 از جاهای که همه عبور می‌کنند، توقف می‌کنیم و دوباره می‌نگریم.
               </p>
-              <div class="hero-actions">
-                <a class="btn btn-primary" href="#posts">
-                  از اولین مطلب شروع کنید
-                  <span aria-hidden="true">←</span>
-                </a>
-                <a
-                  class="btn btn-ghost"
-                  href="https://t.me/bazfekr_channel"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  عضویت در کانال تلگرام
-                  <span aria-hidden="true">✈️</span>
-                </a>
-              </div>
-
-              <div class="stats">
-                <div class="stat">
-                  <strong>۰۴</strong>
-                  <span>دسته‌ی اصلی</span>
-                </div>
-                <div class="stat">
-                  <strong>۲۰۰٪</strong>
-                  <span>تلاش برای تردید</span>
-                </div>
-                <div class="stat">
-                  <strong>۰۰</strong>
-                  <span>قطعیتِ بی‌دلیل</span>
-                </div>
-              </div>
             </div>
 
             <div class="hero-art">
@@ -848,7 +761,6 @@ const featuredPosts = [
                 <div class="dot d1" aria-hidden="true">💡</div>
                 <div class="dot d2" aria-hidden="true">🧠</div>
                 <div class="sticker">تازه تأسیس · ۱۴۰۵</div>
-                <div class="sticker s2">هر هفته، متن تازه</div>
               </div>
             </div>
           </div>
@@ -921,11 +833,6 @@ const featuredPosts = [
               <span>Bazfekr · بازفکر کردن، هنرِ تردید</span>
             </span>
           </a>
-          <p>
-            بازفکر یک نشریه‌ی دودویی در راه است؛ فعلاً از همین صفحه و کانال‌ها
-            می‌توانید با ما همراه شوید. اگر محتوایی در بازفکر دوست داشتید، آن را
-            با دیگران به اشتراک بگذارید؛ بهترین حمایت همین است.
-          </p>
 
           <div class="social" aria-label="شبکه‌های اجتماعی بازفکر">
             <a href="https://t.me/bazfekr_channel" target="_blank" rel="noopener">
