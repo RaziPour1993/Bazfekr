@@ -6,7 +6,7 @@ const pubDate = Astro.props.pubDate ?? frontmatter.pubDate;
 const category = Astro.props.category ?? frontmatter.category ?? "بازفکر";
 const readTime = Astro.props.readTime ?? frontmatter.readTime;
 
-const siteUrl = "https://www.bazfekr.ir";
+const siteUrl = "https://bazfekr.ir";
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
 const formattedDate = pubDate
   ? new Date(pubDate).toLocaleDateString("fa-IR", {
@@ -21,6 +21,11 @@ const formattedDate = pubDate
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
+    <script is:inline>
+      if (location.hostname === "bazfekr.ir" && location.protocol !== "https:") {
+        location.replace("https://bazfekr.ir" + location.pathname + location.search + location.hash);
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
 

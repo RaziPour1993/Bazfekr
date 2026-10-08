@@ -3,7 +3,7 @@ const siteTitle = "بازفکر | Bazfekr";
 const tagline = "چیزهای آشنا، از زاویه‌ای ناآشنا";
 const description =
   "بازفکر؛ فضایی برای کاوش در اقتصاد، رفتار و تصمیم‌های انسانی؛ و چیزهای دیگری که آن‌گونه که فکر می‌کنیم نیستند.";
-const siteUrl = "https://www.bazfekr.ir";
+const siteUrl = "https://bazfekr.ir";
 
 const categories = [
   {
@@ -52,18 +52,23 @@ const featuredPosts = [
 <html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
+    <script is:inline>
+      if (location.hostname === "bazfekr.ir" && location.protocol !== "https:") {
+        location.replace("https://bazfekr.ir" + location.pathname + location.search + location.hash);
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
 
     <title>{siteTitle}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={siteUrl} />
+    <link rel="canonical" href={`${siteUrl}/`} />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="بازفکر" />
     <meta property="og:title" content={siteTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={siteUrl} />
+    <meta property="og:url" content={`${siteUrl}/`} />
     <meta property="og:image" content="/logo.jpg" />
     <meta property="og:locale" content="fa_IR" />
 
@@ -1135,7 +1140,7 @@ const featuredPosts = [
       <div class="container copy">
         <div>© {new Date().getFullYear()} بازفکر — بازفکر کردن؛ آزادانه و با تردید.</div>
         <div>
-          ساخته‌شده با ❤ در ایران · <a href={siteUrl}>www.bazfekr.ir</a>
+          ساخته‌شده با ❤ در ایران · <a href={`${siteUrl}/`}>bazfekr.ir</a>
         </div>
       </div>
     </footer>
